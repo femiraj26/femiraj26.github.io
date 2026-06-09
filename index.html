@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Annalin Femi J K | Portfolio</title>
+<title>Annalin Femi J K | Data Science Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -23,15 +23,15 @@
   --serif:'Fraunces',Georgia,serif;
   --sans:'Inter',system-ui,sans-serif;
   --r:10px;
-  --shadow:0 2px 12px rgba(0,0,0,0.07);
+  --shadow:0 2px 12px rgba(0,0,0,0.06);
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.7;font-weight:400}
 
-/* ── NAV ── */
+/* NAV */
 nav{position:sticky;top:0;background:rgba(247,245,240,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:200;padding:0 2rem}
 .nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
-.nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-0.01em}
+.nav-logo{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-0.01em}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{font-size:0.75rem;font-weight:600;color:var(--ink-3);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--green)}
@@ -42,20 +42,20 @@ nav{position:sticky;top:0;background:rgba(247,245,240,0.96);backdrop-filter:blur
 .mob-menu ul{list-style:none;display:flex;flex-direction:column;gap:1.25rem}
 .mob-menu a{font-size:1rem;font-weight:600;color:var(--ink);text-decoration:none}
 
-/* ── HERO ── */
+/* HERO */
 #hero{background:var(--surface);border-bottom:1px solid var(--border);padding:0 2rem}
-.hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 390px;gap:5rem;align-items:center;padding:5.5rem 0 5rem}
+.hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:5rem;align-items:center;padding:5.5rem 0 5rem}
 .hero-eye{font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--green);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.6rem}
 .hero-eye::before{content:'';display:block;width:28px;height:2px;background:var(--green)}
-.hero-name{font-family:var(--sans);font-size:clamp(2.8rem,6.5vw,4.8rem);line-height:1.05;font-weight:900;color:var(--ink);margin-bottom:0.3rem;letter-spacing:-0.02em}
-.hero-name span{font-style:italic;color:var(--gold)}
-.hero-sub{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink-3);margin-bottom:1.5rem;font-weight:700}
+.hero-name{font-family:var(--sans);font-size:clamp(2.8rem,6.5vw,4.8rem);line-height:1.05;font-weight:800;color:var(--ink);margin-bottom:0.3rem;letter-spacing:-0.03em}
+.hero-name span{color:var(--gold)}
+.hero-sub{font-size:1rem;font-weight:600;color:var(--ink-3);margin-bottom:1.5rem;letter-spacing:0.02em;text-transform:uppercase}
 .hero-bio{font-size:0.97rem;font-weight:400;color:var(--ink-2);max-width:500px;line-height:1.85;margin-bottom:2rem}
 .hero-stats{display:flex;gap:2rem;margin-bottom:2.2rem;flex-wrap:wrap}
 .stat-num{font-family:var(--serif);font-size:1.9rem;font-weight:900;color:var(--green);line-height:1}
-.stat-lbl{font-size:0.7rem;font-weight:600;color:var(--ink-3);letter-spacing:0.04em;margin-top:3px;text-transform:uppercase}
+.stat-lbl{font-size:0.68rem;font-weight:600;color:var(--ink-3);letter-spacing:0.05em;margin-top:3px;text-transform:uppercase}
 .hero-btns{display:flex;gap:0.85rem;flex-wrap:wrap}
-.btn-fill{display:inline-block;background:var(--green);color:#fff;padding:0.72rem 1.7rem;border-radius:var(--r);font-size:0.85rem;font-weight:700;text-decoration:none;letter-spacing:0.01em;transition:background 0.2s,transform 0.15s}
+.btn-fill{display:inline-block;background:var(--green);color:#fff;padding:0.72rem 1.7rem;border-radius:var(--r);font-size:0.85rem;font-weight:700;text-decoration:none;transition:background 0.2s,transform 0.15s}
 .btn-fill:hover{background:#174d33;transform:translateY(-1px)}
 .btn-ghost{display:inline-block;border:1.5px solid var(--border);color:var(--ink);padding:0.7rem 1.7rem;border-radius:var(--r);font-size:0.85rem;font-weight:600;text-decoration:none;transition:border-color 0.2s,background 0.2s}
 .btn-ghost:hover{border-color:var(--green);background:var(--green-light)}
@@ -64,12 +64,12 @@ nav{position:sticky;top:0;background:rgba(247,245,240,0.96);backdrop-filter:blur
 .photo-frame{border-radius:16px;overflow:hidden;aspect-ratio:3/4;border:1px solid var(--border);position:relative;box-shadow:var(--shadow)}
 .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
 .photo-badge{position:absolute;bottom:1rem;left:1rem;right:1rem;background:rgba(255,255,255,0.94);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:9px;padding:0.75rem 1rem;display:flex;align-items:center;gap:0.7rem}
-.badge-dot{width:9px;height:9px;border-radius:50%;background:var(--green-2);flex-shrink:0;box-shadow:0 0 0 3px rgba(45,122,86,0.2);animation:pulse 2s infinite}
+.badge-dot{width:9px;height:9px;border-radius:50%;background:var(--green-2);flex-shrink:0;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(45,122,86,0.2)}50%{box-shadow:0 0 0 6px rgba(45,122,86,0.07)}}
 .badge-text strong{display:block;font-weight:700;font-size:0.82rem;color:var(--ink)}
 .badge-text span{font-size:0.73rem;color:var(--ink-3)}
 
-/* ── SECTIONS ── */
+/* SECTIONS */
 section{padding:5rem 2rem}
 .container{max-width:1140px;margin:0 auto}
 .sec-eye{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;display:flex;align-items:center;gap:0.5rem}
@@ -77,7 +77,7 @@ section{padding:5rem 2rem}
 .sec-title{font-family:var(--serif);font-size:2.3rem;font-weight:900;color:var(--ink);line-height:1.1;margin-bottom:2.8rem;letter-spacing:-0.02em}
 .sec-title em{font-style:italic;color:var(--gold)}
 
-/* ── SKILLS ── */
+/* SKILLS */
 #skills{background:var(--warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.1rem}
 .sk-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.3rem;transition:border-color 0.2s,transform 0.2s;box-shadow:var(--shadow)}
@@ -87,9 +87,9 @@ section{padding:5rem 2rem}
 .sk-tags{display:flex;flex-wrap:wrap;gap:0.35rem}
 .tag{background:var(--warm);color:var(--ink-2);font-size:0.74rem;font-weight:500;padding:0.2rem 0.55rem;border-radius:4px;border:1px solid var(--border)}
 
-/* ── EXPERIENCE ── */
+/* EXPERIENCE */
 #experience{background:var(--surface)}
-.tl{display:flex;flex-direction:column;gap:0}
+.tl{display:flex;flex-direction:column}
 .tl-item{display:grid;grid-template-columns:180px 1fr;gap:0 2.5rem;padding-bottom:2.5rem}
 .tl-item:last-child{padding-bottom:0}
 .tl-left{text-align:right;padding-top:4px}
@@ -100,31 +100,33 @@ section{padding:5rem 2rem}
 .tl-role{font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:0.55rem;display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap}
 .tl-badge{font-size:0.68rem;font-weight:700;background:var(--green-light);color:var(--green);padding:0.12rem 0.5rem;border-radius:4px}
 .tl-desc{list-style:none;display:flex;flex-direction:column;gap:0.3rem}
-.tl-desc li{font-size:0.86rem;font-weight:400;color:var(--ink-3);padding-left:1rem;position:relative}
+.tl-desc li{font-size:0.86rem;color:var(--ink-3);padding-left:1rem;position:relative}
 .tl-desc li::before{content:'→';position:absolute;left:0;color:var(--green-2);font-size:0.72rem;top:3px;font-weight:700}
 
-/* ── PROJECTS ── */
+/* PROJECTS */
 #projects{background:var(--bg)}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.25rem}
 .proj-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;display:flex;flex-direction:column;transition:border-color 0.22s,transform 0.22s,box-shadow 0.22s;box-shadow:var(--shadow);cursor:pointer}
 .proj-card:hover{border-color:var(--green);transform:translateY(-3px);box-shadow:0 16px 40px rgba(30,95,63,0.1)}
-.proj-card.feat{border-color:var(--green);background:linear-gradient(135deg,var(--surface) 85%,var(--green-light))}
+.proj-card.feat{border-color:rgba(30,95,63,0.3);background:linear-gradient(140deg,var(--surface) 80%,var(--green-light))}
 .proj-top{padding:1.6rem 1.6rem 0}
 .proj-num{font-family:var(--serif);font-size:2.6rem;font-weight:900;color:var(--border);line-height:1;margin-bottom:0.35rem;user-select:none}
-.proj-title{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:0.65rem;display:flex;align-items:flex-start;gap:0.5rem;flex-wrap:wrap}
-.pbadge{font-size:0.65rem;font-weight:700;background:var(--gold-light);color:var(--gold);padding:0.15rem 0.5rem;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px}
-.proj-desc{font-size:0.84rem;font-weight:400;color:var(--ink-3);line-height:1.78}
+.proj-title{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);line-height:1.35;margin-bottom:0.65rem;display:flex;align-items:flex-start;gap:0.45rem;flex-wrap:wrap}
+.pbadge{font-size:0.63rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:1px}
+.pbadge-live{background:var(--green-light);color:var(--green)}
+.pbadge-gold{background:var(--gold-light);color:var(--gold)}
+.proj-desc{font-size:0.83rem;color:var(--ink-3);line-height:1.78}
 .proj-bot{padding:1.1rem 1.6rem 1.6rem;margin-top:auto}
 .proj-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-bottom:0.85rem}
 .ptag{background:var(--green-light);color:var(--green);font-size:0.72rem;font-weight:600;padding:0.18rem 0.55rem;border-radius:4px}
-.proj-links{display:flex;gap:0.65rem;flex-wrap:wrap}
+.proj-links{display:flex;gap:0.6rem;flex-wrap:wrap}
 .plink{font-size:0.78rem;font-weight:700;text-decoration:none;padding:0.3rem 0.75rem;border-radius:5px;transition:background 0.18s,color 0.18s}
 .plink.live{background:var(--green);color:#fff}
 .plink.live:hover{background:#174d33}
 .plink.gh{background:var(--warm);color:var(--ink-2);border:1px solid var(--border)}
 .plink.gh:hover{border-color:var(--green);color:var(--green)}
 
-/* ── EDUCATION ── */
+/* EDUCATION */
 #education{background:var(--warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .edu-grid{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.8rem}
 .edu-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.3rem 1.6rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;box-shadow:var(--shadow)}
@@ -143,11 +145,11 @@ section{padding:5rem 2rem}
 .cert-org{font-size:0.74rem;font-weight:500;color:var(--ink-3);margin-top:0.15rem}
 .cert-date{font-size:0.7rem;font-weight:700;color:var(--gold);margin-top:0.25rem}
 
-/* ── CONTACT ── */
+/* CONTACT */
 #contact{background:var(--surface)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.contact-title{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:0.8rem;letter-spacing:-0.01em}
-.contact-sub{font-size:0.92rem;font-weight:400;color:var(--ink-3);line-height:1.8}
+.contact-title{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:0.8rem}
+.contact-sub{font-size:0.92rem;color:var(--ink-3);line-height:1.8}
 .c-links{display:flex;flex-direction:column;gap:0.7rem;margin-top:2rem}
 .c-lnk{display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--ink);padding:0.85rem 1rem;background:var(--warm);border:1px solid var(--border);border-radius:var(--r);transition:border-color 0.2s,background 0.2s}
 .c-lnk:hover{border-color:var(--green);background:var(--green-light)}
@@ -155,18 +157,18 @@ section{padding:5rem 2rem}
 .c-lbl{font-size:0.65rem;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.07em}
 .c-val{font-size:0.85rem;font-weight:600;color:var(--ink)}
 
-/* ── FOOTER ── */
-footer{background:var(--ink);color:rgba(255,255,255,0.75);text-align:center;padding:2rem;font-size:0.78rem;font-weight:500;letter-spacing:0.04em}
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,0.65);text-align:center;padding:2rem;font-size:0.78rem;font-weight:500;letter-spacing:0.04em}
 footer span{color:var(--gold)}
 
-/* ── ANIMATIONS ── */
+/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .a{animation:fadeUp 0.6s ease forwards}
 .d1{animation-delay:0.1s;opacity:0}.d2{animation-delay:0.22s;opacity:0}
 .d3{animation-delay:0.36s;opacity:0}.d4{animation-delay:0.5s;opacity:0}
 .d5{animation-delay:0.64s;opacity:0}
 
-/* ── RESPONSIVE ── */
+/* RESPONSIVE */
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;gap:2.5rem;padding:4rem 0}
   .hero-photo-wrap{order:-1;max-width:280px;margin:0 auto}
@@ -221,11 +223,11 @@ footer span{color:var(--gold)}
     <div class="hero-left">
       <p class="hero-eye a d1">M.Sc. Data Science &nbsp;·&nbsp; St. Xavier's College, Palayamkottai</p>
       <h1 class="hero-name a d2">Annalin<br/><span>Femi J K</span></h1>
-      <p class="hero-sub a d3">Data Analyst · Fresher</p>
-      <p class="hero-bio a d3">Passionate about transforming complex data into actionable insights. Skilled in Python, SQL, machine learning, and data visualisation — with hands-on experience across 3 internships and impactful AI projects in healthcare, NLP, and analytics.</p>
+      <p class="hero-sub a d3">Data Science Fresher</p>
+      <p class="hero-bio a d3">Passionate about building intelligent data-driven solutions — from deep learning models and NLP pipelines to AI-powered dashboards. Hands-on experience across 3 internships with real-world ML, analytics, and GenAI projects.</p>
       <div class="hero-stats a d4">
         <div class="stat"><div class="stat-num">3+</div><div class="stat-lbl">Internships</div></div>
-        <div class="stat"><div class="stat-num">8</div><div class="stat-lbl">Projects</div></div>
+        <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Projects</div></div>
         <div class="stat"><div class="stat-num">9.21</div><div class="stat-lbl">CGPA (M.Sc)</div></div>
         <div class="stat"><div class="stat-num">Top 5%</div><div class="stat-lbl">NPTEL Elite</div></div>
       </div>
@@ -257,10 +259,11 @@ footer span{color:var(--gold)}
     <div class="skills-grid">
       <div class="sk-card"><div class="sk-icon">🐍</div><div class="sk-cat">Programming</div><div class="sk-tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span></div></div>
       <div class="sk-card"><div class="sk-icon">🧠</div><div class="sk-cat">ML / DL / NLP</div><div class="sk-tags"><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">CNN</span><span class="tag">RNN</span><span class="tag">NLTK</span><span class="tag">spaCy</span></div></div>
-      <div class="sk-card"><div class="sk-icon">📦</div><div class="sk-cat">Data Libraries</div><div class="sk-tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">FastAPI</span></div></div>
+      <div class="sk-card"><div class="sk-icon">🤖</div><div class="sk-cat">GenAI &amp; LLMs</div><div class="sk-tags"><span class="tag">Gemini 2.5 Flash</span><span class="tag">Google GenAI SDK</span><span class="tag">Text-to-SQL</span><span class="tag">Prompt Engineering</span></div></div>
+      <div class="sk-card"><div class="sk-icon">📦</div><div class="sk-cat">Data Libraries</div><div class="sk-tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">FastAPI</span><span class="tag">Flask</span></div></div>
       <div class="sk-card"><div class="sk-icon">🗄️</div><div class="sk-cat">Databases</div><div class="sk-tags"><span class="tag">MySQL</span><span class="tag">MongoDB</span></div></div>
       <div class="sk-card"><div class="sk-icon">📊</div><div class="sk-cat">BI &amp; Visualisation</div><div class="sk-tags"><span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">Excel</span></div></div>
-      <div class="sk-card"><div class="sk-icon">⚙️</div><div class="sk-cat">Dev Tools</div><div class="sk-tags"><span class="tag">Jupyter</span><span class="tag">Google Colab</span><span class="tag">VS Code</span><span class="tag">Orange</span><span class="tag">Git</span></div></div>
+      <div class="sk-card"><div class="sk-icon">⚙️</div><div class="sk-cat">Dev Tools</div><div class="sk-tags"><span class="tag">Jupyter</span><span class="tag">Google Colab</span><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">AWS</span></div></div>
     </div>
   </div>
 </section>
@@ -276,8 +279,8 @@ footer span{color:var(--gold)}
         <div class="tl-right">
           <div class="tl-role">Data Science Intern <span class="tl-badge">AICTE &amp; ICAC Approved</span></div>
           <ul class="tl-desc">
-            <li>Engineered a Fraud Detection model using Python and ML classification algorithms.</li>
-            <li>Developed a Fake News Detection system using NLP techniques (TF-IDF, SVM), achieving 98–99% accuracy.</li>
+            <li>Engineered a Fraud Detection model using Python and ML classification algorithms to identify anomalous transactions.</li>
+            <li>Developed a Fake News Detection system using NLP (TF-IDF, SVM), achieving 98–99% accuracy.</li>
             <li>Applied data preprocessing, feature engineering, and model evaluation techniques.</li>
           </ul>
         </div>
@@ -316,7 +319,7 @@ footer span{color:var(--gold)}
 <div class="proj-card  feat">
   <div class="proj-top">
     <div class="proj-num">01</div>
-    <div class="proj-title">AI-Based Retinal Image Analysis for Early Eye Disease Detection<span class="pbadge">Live Demo</span></div>
+    <div class="proj-title">AI-Based Retinal Image Analysis for Early Eye Disease Detection <span class="pbadge">Live ↗</span></div>
     <p class="proj-desc">Analyzed 40,000 retinal images using a 2-stage deep learning pipeline with EfficientNet-B4, achieving 80.98% accuracy. Integrated FastAPI backend for real-time predictions and automated clinical report generation. Recognised by Dr. Agarwal's Institute of Optometry.</p>
   </div>
   <div class="proj-bot">
@@ -327,8 +330,19 @@ footer span{color:var(--gold)}
 <div class="proj-card  feat">
   <div class="proj-top">
     <div class="proj-num">02</div>
-    <div class="proj-title">Fake News Detection using NLP</div>
-    <p class="proj-desc">Classifies news articles as Fake or Real using TF-IDF vectorization, Logistic Regression and SVM. Achieves 98–99% accuracy on benchmark datasets. Includes real-time prediction with Streamlit.</p>
+    <div class="proj-title">AI Natural Language to SQL Analytics Dashboard <span class="pbadge">GenAI</span></div>
+    <p class="proj-desc">Enterprise-grade analytics dashboard that converts plain English questions into live MySQL queries using Google Gemini 2.5 Flash. Features smart local fallback, persistent query history, and dynamic charts (Doughnut & Bar). Built with Flask, Python, and Vanilla JS.</p>
+  </div>
+  <div class="proj-bot">
+    <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">Gemini 2.5 Flash</span><span class="ptag">MySQL</span><span class="ptag">NLP</span><span class="ptag">GenAI</span></div>
+    <div class="proj-links"><a href="https://github.com/femiraj26/AI-Natural-Language-SQL-Dashboard" target="_blank" rel="noopener" class="plink gh">GitHub ↗</a></div>
+  </div>
+</div>
+<div class="proj-card  feat">
+  <div class="proj-top">
+    <div class="proj-num">03</div>
+    <div class="proj-title">Fake News Detection using NLP </div>
+    <p class="proj-desc">Classifies news articles as Fake or Real using TF-IDF vectorization, Logistic Regression, and SVM. Achieves 98–99% accuracy on benchmark datasets with real-time prediction interface.</p>
   </div>
   <div class="proj-bot">
     <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">NLP</span><span class="ptag">TF-IDF</span><span class="ptag">Scikit-learn</span><span class="ptag">SVM</span></div>
@@ -337,9 +351,9 @@ footer span{color:var(--gold)}
 </div>
 <div class="proj-card  feat">
   <div class="proj-top">
-    <div class="proj-num">03</div>
-    <div class="proj-title">Fraud Detection System</div>
-    <p class="proj-desc">Engineered an ML-based fraud detection model using Python and classification algorithms to identify anomalous financial transactions with high precision. Built during AICTE-approved internship at Codec Technologies.</p>
+    <div class="proj-num">04</div>
+    <div class="proj-title">Fraud Detection System </div>
+    <p class="proj-desc">ML-based fraud detection model using Python and classification algorithms to identify anomalous financial transactions with high precision. Built during AICTE-approved internship at Codec Technologies.</p>
   </div>
   <div class="proj-bot">
     <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">Classification</span><span class="ptag">Feature Engineering</span></div>
@@ -348,9 +362,20 @@ footer span{color:var(--gold)}
 </div>
 <div class="proj-card">
   <div class="proj-top">
-    <div class="proj-num">04</div>
-    <div class="proj-title">Road Accident Severity & Safety Analytics<span class="pbadge">Conference Paper</span></div>
-    <p class="proj-desc">Analyzes Indian road accident data to identify accident-prone zones and contributing factors. Found most severe accidents occur in urban areas during peak hours (rush hour). Presented at International Conference on Applied Mathematics & Data Science (Oct 2025).</p>
+    <div class="proj-num">05</div>
+    <div class="proj-title">Titanic Survival Prediction </div>
+    <p class="proj-desc">Applied Logistic Regression, Decision Tree, Random Forest, and SVM to predict passenger survival. Random Forest achieved 100% accuracy; SVM achieved 98.8% F1-score. Includes rich visualisations: heatmaps, survival by gender, fare vs age.</p>
+  </div>
+  <div class="proj-bot">
+    <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">Random Forest</span><span class="ptag">SVM</span><span class="ptag">EDA</span></div>
+    <div class="proj-links"><a href="https://github.com/femiraj26/Titanic_survival_predication" target="_blank" rel="noopener" class="plink gh">GitHub ↗</a></div>
+  </div>
+</div>
+<div class="proj-card">
+  <div class="proj-top">
+    <div class="proj-num">06</div>
+    <div class="proj-title">Road Accident Severity & Safety Analytics <span class="pbadge">Conference Paper</span></div>
+    <p class="proj-desc">Analyzes Indian road accident data to identify accident-prone zones and contributing factors. Found most severe accidents occur during rush hours (8–10 AM, 5–8 PM). Presented at International Conference on Applied Mathematics & Data Science (Oct 2025).</p>
   </div>
   <div class="proj-bot">
     <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Pandas</span><span class="ptag">Matplotlib</span><span class="ptag">Seaborn</span><span class="ptag">EDA</span></div>
@@ -359,41 +384,30 @@ footer span{color:var(--gold)}
 </div>
 <div class="proj-card">
   <div class="proj-top">
-    <div class="proj-num">05</div>
-    <div class="proj-title">Healthcare Analytics Tableau Dashboard</div>
+    <div class="proj-num">07</div>
+    <div class="proj-title">Healthcare Analytics Tableau Dashboard </div>
     <p class="proj-desc">Interactive Tableau dashboard analyzing 55,000+ patient records. Covers KPI summary, admission trends, age/gender distribution, medical condition insights, billing analysis, and top-10 doctor performance comparison.</p>
   </div>
   <div class="proj-bot">
-    <div class="proj-tags"><span class="ptag">Tableau</span><span class="ptag">Data Visualisation</span><span class="ptag">Healthcare Analytics</span></div>
+    <div class="proj-tags"><span class="ptag">Tableau</span><span class="ptag">Healthcare Analytics</span><span class="ptag">Data Visualisation</span></div>
     <div class="proj-links"><a href="https://github.com/femiraj26/Healthcare-Analytics-Tableau-Dashboard" target="_blank" rel="noopener" class="plink gh">GitHub ↗</a></div>
   </div>
 </div>
 <div class="proj-card">
   <div class="proj-top">
-    <div class="proj-num">06</div>
-    <div class="proj-title">Global Air Transportation Network Analysis</div>
-    <p class="proj-desc">Analyzed 10,000+ flight records to map global connectivity patterns and identify high-traffic air corridors. Designed interactive Tableau dashboards enabling route filtering by region, volume, and airline.</p>
+    <div class="proj-num">08</div>
+    <div class="proj-title">Global Air Transportation Network Analysis </div>
+    <p class="proj-desc">Analyzed 10,000+ flight records to map global connectivity patterns and high-traffic air corridors. Interactive Tableau dashboards for filtering routes by region, volume, and airline.</p>
   </div>
   <div class="proj-bot">
-    <div class="proj-tags"><span class="ptag">Tableau</span><span class="ptag">Data Visualisation</span><span class="ptag">Network Analysis</span></div>
+    <div class="proj-tags"><span class="ptag">Tableau</span><span class="ptag">Network Analysis</span><span class="ptag">Data Visualisation</span></div>
     <div class="proj-links"><a href="https://github.com/femiraj26/unlocking-insight-into-Global-Air-Transportation-Network-with-Tableau" target="_blank" rel="noopener" class="plink gh">GitHub ↗</a></div>
   </div>
 </div>
 <div class="proj-card">
   <div class="proj-top">
-    <div class="proj-num">07</div>
-    <div class="proj-title">Titanic Survival Prediction</div>
-    <p class="proj-desc">Applied Logistic Regression, Decision Tree, Random Forest, and SVM to predict passenger survival. Random Forest and Decision Tree achieved 100% accuracy; SVM achieved 98.8% F1-score. Includes rich visualisations: heatmaps, survival by gender, fare vs age.</p>
-  </div>
-  <div class="proj-bot">
-    <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">ML</span><span class="ptag">EDA</span><span class="ptag">Jupyter</span></div>
-    <div class="proj-links"><a href="https://github.com/femiraj26/Titanic_survival_predication" target="_blank" rel="noopener" class="plink gh">GitHub ↗</a></div>
-  </div>
-</div>
-<div class="proj-card">
-  <div class="proj-top">
-    <div class="proj-num">08</div>
-    <div class="proj-title">Chocolate Sales Dashboard</div>
+    <div class="proj-num">09</div>
+    <div class="proj-title">Chocolate Sales Dashboard </div>
     <p class="proj-desc">Interactive sales analytics dashboard visualising chocolate product performance, revenue trends, and regional distribution insights to support business decision-making.</p>
   </div>
   <div class="proj-bot">
@@ -430,13 +444,13 @@ footer span{color:var(--gold)}
     </div>
     <div class="certs-label">Certifications &amp; Recognition</div>
     <div class="certs-grid">
-      <div class="cert-card"><div class="cert-icon">☁️</div><div><div class="cert-name">Fundamentals of Machine Learning and Artificial Intelligence</div><div class="cert-org">AWS Training &amp; Certification · Amazon Web Services</div><div class="cert-date">May 2026</div></div></div>
+      <div class="cert-card"><div class="cert-icon">☁️</div><div><div class="cert-name">Fundamentals of ML &amp; Artificial Intelligence</div><div class="cert-org">AWS Training &amp; Certification · Amazon Web Services</div><div class="cert-date">May 2026</div></div></div>
       <div class="cert-card"><div class="cert-icon">🏅</div><div><div class="cert-name">NPTEL Elite — Python for Data Science</div><div class="cert-org">IIT Madras (SWAYAM) · Top 5% Topper · Score: 78%</div><div class="cert-date">Jan – Feb 2026</div></div></div>
       <div class="cert-card"><div class="cert-icon">🏆</div><div><div class="cert-name">Certificate of Appreciation — Retinal Image Analysis</div><div class="cert-org">Dr. Agarwal's Institute of Optometry, Tirunelveli</div><div class="cert-date">2025 – 2026</div></div></div>
       <div class="cert-card"><div class="cert-icon">🎓</div><div><div class="cert-name">Paper Presentation — International Conference</div><div class="cert-org">Applied Mathematics &amp; Data Science · Morning Star &amp; North Bengal St. Xavier's</div><div class="cert-date">Oct 2025</div></div></div>
       <div class="cert-card"><div class="cert-icon">📜</div><div><div class="cert-name">AICTE &amp; ICAC Approved — Data Science Internship</div><div class="cert-org">Codec Technologies Pvt. Ltd.</div><div class="cert-date">Jul – Aug 2025</div></div></div>
-      <div class="cert-card"><div class="cert-icon">🔬</div><div><div class="cert-name">Internship Completion — GrowthLink</div><div class="cert-org">Data Science · ID: GWLKC641368</div><div class="cert-date">Mar – Apr 2025</div></div></div>
       <div class="cert-card"><div class="cert-icon">🎯</div><div><div class="cert-name">Participation — Common Internship Test</div><div class="cert-org">Internship Studio · CIT-P-1569495</div><div class="cert-date">Apr 2025</div></div></div>
+      <div class="cert-card"><div class="cert-icon">🔬</div><div><div class="cert-name">Internship Completion — GrowthLink</div><div class="cert-org">Data Science · ID: GWLKC641368</div><div class="cert-date">Mar – Apr 2025</div></div></div>
       <div class="cert-card"><div class="cert-icon">📊</div><div><div class="cert-name">Naan Mudhalvan — Data Analytics with Tableau</div><div class="cert-org">TNSDC</div><div class="cert-date">Mar 2025</div></div></div>
     </div>
   </div>
@@ -449,7 +463,7 @@ footer span{color:var(--gold)}
     <h2 class="sec-title">Get in <em>Touch</em></h2>
     <div class="contact-grid">
       <div>
-        <div class="contact-title">Open to data science roles, research collaborations &amp; analytics opportunities.</div>
+        <div class="contact-title">Open to Data Science, ML &amp; Analytics roles.</div>
         <p class="contact-sub">Whether you have an opportunity, a project idea, or just want to say hello — feel free to reach out. I'll get back to you promptly!</p>
       </div>
       <div class="c-links">
@@ -485,22 +499,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-68,behavior:'smooth'})}
   })
 })
-</script>
-
-<script>
-// Make entire project card clickable
-document.querySelectorAll('.proj-card').forEach(card => {
-  const liveLink = card.querySelector('.plink.live');
-  const ghLink = card.querySelector('.plink.gh');
-  const primaryLink = liveLink || ghLink;
-  if (primaryLink) {
-    card.addEventListener('click', (e) => {
-      if (!e.target.closest('a')) {
-        window.open(primaryLink.href, '_blank', 'noopener');
-      }
-    });
+document.querySelectorAll('.proj-card').forEach(card=>{
+  const liveLink=card.querySelector('.plink.live');
+  const ghLink=card.querySelector('.plink.gh');
+  const primary=liveLink||ghLink;
+  if(primary){
+    card.addEventListener('click',e=>{
+      if(!e.target.closest('a'))window.open(primary.href,'_blank','noopener')
+    })
   }
-});
+})
 </script>
 </body>
 </html>
